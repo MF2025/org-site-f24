@@ -78,12 +78,12 @@ export default function SiteHeader() {
             <div onClick={() => headerButtonStyles('Events')}>
               <NavButton handleItemClick={handleItemClick} link="/events" title="Events" active={buttonStyles.Events}/>
             </div>
-            <div onClick={() => headerButtonStyles('AboutUs')}>
-              <NavButton handleItemClick={handleItemClick} link="/about" title="About Us" active={buttonStyles.AboutUs}/>
-            </div>
             <div onClick={() => headerButtonStyles('OurTeam')}>
               <NavButton handleItemClick={handleItemClick} link="/team" title="Our Team" active={buttonStyles.OurTeam}/>
             </div>  
+            <div onClick={() => headerButtonStyles('Hack AI')}>
+              <NavButton handleItemClick={handleItemClick} link="/hackAI" title="Hack AI" active={buttonStyles.AboutUs}/>
+            </div>
             <div onClick={() => headerButtonStyles('JoinUs')}>
               <NavButton handleItemClick={handleItemClick} link="/join" title="Join Us" active={buttonStyles.JoinUs}/>
             </div> 
@@ -108,8 +108,8 @@ export default function SiteHeader() {
               }}
             >
                 <MenuItem onClick={() => {handleItemClick('/events', 'Events')}}>Events</MenuItem>
-                <MenuItem onClick={() => {handleItemClick('/about', 'AboutUs')}}>About Us</MenuItem>
-                <MenuItem onClick={() => {handleItemClick('/team', 'OurTeam')}}>Our Team</MenuItem>
+                <MenuItem onClick={() => {handleItemClick('/team', 'OurTeam')}}>Our Team</MenuItem>        
+                <MenuItem onClick={() => {handleItemClick('/hackAI', 'HackAI')}}>Hack AI</MenuItem>
                 <MenuItem onClick={() => {handleItemClick('/join', 'JoinUs')}}>Join Us</MenuItem>
             
             </Menu>
@@ -120,7 +120,7 @@ export default function SiteHeader() {
                 <InstagramIcon className='h-6 text-ais-new-med-blue'/>
               </IconButton>
               <IconButton onClick={() => {window.open("/discord", "_blank")}}>
-                <img src="/images/Logos/bluediscord.png" className="h-5" />
+              <img src="/images/Logos/DiscordBlueIcon.svg" className="h-5 " />
               </IconButton>
               <IconButton onClick={() => {window.open("/linkedin", "_blank")}}>
                 <LinkedInIcon className='h-6 text-ais-new-med-blue'/>
